@@ -44,10 +44,10 @@ def app():
     selected_option = st.selectbox('Select the year', options)
     if selected_option=='2019':
         year = selected_option
-        df = filterByYear(year)
+        df = filterByYear(df, year)
     else:
         year = selected_option
-        df = filterByYear(year)
+        df = filterByYear(df, year)
         
     campus = 'All'
     options = ['All']
@@ -56,7 +56,7 @@ def app():
     selected_option = st.selectbox('Select the campus', options)
     if selected_option=='All':
         df = loadcsvfile()
-        df = filterByYear(year)
+        df = filterByYear(df, year)
     else:
         campus = selected_option
         df = filterByCampus(df, campus)
