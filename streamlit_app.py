@@ -70,8 +70,12 @@ def app():
     mean_rate = round(new_df['Passing Rate'].mean(), 2)
     
     if st.button('Show Licensure Exam Report'):
+        
+
+
+
         fig = plt.figure(figsize = (10, 3))
-        sns.barplot(x = None, y = df['Passing Rate'], palette= 'viridis')
+        sns.barplot(x = df['Exam Date'], y = df['Passing Rate'], plt.xlabel = 'Category', plt.ylabel ='Value', palette= 'viridis')
         st.pyplot(fig)
         s = 'Year: ' + year
         st.write(s)
