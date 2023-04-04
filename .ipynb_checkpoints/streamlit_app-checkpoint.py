@@ -63,6 +63,7 @@ def app():
         df = filterByCampus(df, campus)
         
     df['Passing Rate'] = round(df['Passers'].astype(int) / df['Takers'].astype(int) * 100, 2)
+    df['Passing Rate'] = df['Passing Rate'].round(2)
     new_df = df.loc[:, ['Exam', 'Date', 'Takers', 'Passers', 'Passing Rate']]  
     mean_rate = round(new_df['Passing Rate'].mean(), 2)
     
@@ -72,7 +73,7 @@ def app():
         s = 'Campus: ' + campus
         st.write(s)
         st.write(new_df)
-        s = 'Mean Passing Rate: ' + str(mean_rate)
+        s = 'Mean Passing Rate: ' + str(mean_rate) + '%'
         st.write(s)
         
 #run the app
