@@ -51,7 +51,8 @@ def app():
         
     campus = 'All'
     options = ['All']
-    options.append(list(df['Campus'].unique()))
+    for item in list(df['Campus'].unique()):
+        options.append(item)
     
     selected_option = st.selectbox('Select the campus', options)
     if selected_option=='All':
