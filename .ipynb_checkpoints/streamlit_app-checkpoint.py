@@ -51,7 +51,7 @@ def app():
         
     campus = 'All'
     options = ['All']
-    options.append(df['Campus'].unique())
+    options.append(list(df['Campus'].unique()))
     
     selected_option = st.selectbox('Select the campus', options)
     if selected_option=='All':
@@ -66,10 +66,13 @@ def app():
     mean_rate = new_df['Passing Rate'].mean()
     
     if st.button('Show Licensure Exam Report'):
-        st.write('Year: ' + year)
-        st.write('Campus: ' + campus)
+        s = 'Year: ' + year
+        st.write(s)
+        s = 'Campus: ' + campus
+        st.write(s)
         st.write(new_df)
-        st.write('Mean Passing Rate: ' + mean_rate)
+        s = 'Mean Passing Rate: ' + mean_rate
+        st.write(s)
         
 #run the app
 if __name__ == "__main__":
