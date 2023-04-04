@@ -75,13 +75,11 @@ def app():
 
 
         fig = plt.figure(figsize = (10, 3))
-        # create barplot
-        sns.barplot(x = df['Exam Date'], y = df['Passing Rate'], palette= 'viridis')
         plt.title('Comparison of Passing Rates')
         plt.xlabel('Category')
         plt.ylabel('Value')
-        ax = plt.gca()
-        ax.set_xticklabels(labels=labels,rotation=90);
+        p = sns.barplot(x = df['Exam Date'], y = df['Passing Rate'], palette= 'viridis')
+        _ = plt.setp(p.get_xticklabels(), rotation=90) 
         st.pyplot(fig)
         
         s = 'Year: ' + year
