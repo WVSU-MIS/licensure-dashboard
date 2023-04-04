@@ -16,7 +16,7 @@ def filterByCampus(df, campus):
         return filtered_df
 
 def filterByYear(df, year): 
-    filtered_df = df[df['Year'] == campus]  
+    filtered_df = df[df['Year'] == year]  
     return filtered_df
     
 
