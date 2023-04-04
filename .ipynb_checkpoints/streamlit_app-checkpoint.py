@@ -75,7 +75,7 @@ def app():
 
 
         fig = plt.figure(figsize = (10, 3))
-        sns.barplot(x = df['Exam Date'], y = df['Passing Rate'], plt.xlabel = 'Category', plt.ylabel ='Value', palette= 'viridis')
+        sns.barplot(x = df['Exam Date'], y = df['Passing Rate'], xlabel = 'Category', ylabel ='Value', palette= 'viridis')
         st.pyplot(fig)
         s = 'Year: ' + year
         st.write(s)
