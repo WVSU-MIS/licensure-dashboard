@@ -80,6 +80,8 @@ def app():
         plt.title('Comparison of Passing Rates')
         plt.xlabel('Category')
         plt.ylabel('Value')
+        ax = plt.gca()
+        ax.set_xticklabels(labels=labels,rotation=90);
         st.pyplot(fig)
         
         s = 'Year: ' + year
