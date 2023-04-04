@@ -1,0 +1,66 @@
+Exam,Date,Takers,Passers,Campus,Year
+LET Secondary Level,"January 30, 2022",2,2,Main Campus,2022
+LET Secondary Level,"March  27, 2022",1,1,Main Campus,2022
+LET Secondary Level,2022-10-02,85,75,Main Campus,2022
+LET Elementary Level,2022-10-02,10,10,Main Campus,2022
+Physician Licensure Exam,"March 6,7,13 & 14",29,26,Main Campus,2022
+Physician Licensure Exam,"October 21, 22, 28, & 29, 2022",107,97,Main Campus,2022
+Nursing Licensure Exam,"November 12-13, 2022",134,134,Main Campus,2022
+LET Secondary Level,"January 30, 2022",1,0,Calinog Campus,2022
+LET Elementary Level,2022-03-27,1,1,Calinog Campus,2022
+LET Secondary Level,2022-10-02,9,5,Calinog Campus,2022
+LET Elementary Level,2022-10-02,2,2,Calinog Campus,2022
+Agriculturist Licensure Exam,"November 22-24, 2022",43,11,Calinog Campus,2022
+LET Secondary Level,2022-10-02,7,3,Himamaylan Campus,2022
+LET Elementary Level,2022-10-02,6,5,Himamaylan Campus,2022
+LET Secondary Level,"January 30, 2022",1,0,Lambunao Campus,2022
+Criminologist Licensure Exam,"July 25, 2022",5,1,Lambunao Campus,2022
+Criminologist Licensure Exam,"December 4,5, and 6, 2022",181,94,Lambunao Campus,2022
+LET Secondary Level,"October 2, 2022",10,3,Lambunao Campus,2022
+LET Elementary Level,"October 2, 2022",3,3,Lambunao Campus,2022
+Forester Licensure Exam,"October 26 & 27, 2022",33,18,CAF Campus,2022
+Agriculturist Licensure Exam  ,"November 22-24, 2022",88,39,CAF Campus,2022
+LET Elementary Level,03 24 19,20,18,Main Campus,2019
+LET Elementary Level,09 29 19,259,236,Main Campus,2019
+LET Secondary Level,03 24 19,86,68,Main Campus,2019
+LET Secondary Level,09 29 19,376,327,Main Campus,2019
+Physician Licensure Exam,"March 3,4,10 & 11, 2019",14,14,Main Campus,2019
+Physician Licensure Exam,"September 7, 8, 14 & 15 , 2019",93,93,Main Campus,2019
+Nurse Licensure Exam,"June 2 & 3, 2019",163,163,Main Campus,2019
+Nurse Licensure Exam,"November 16 & 17, 2019",1,1,Main Campus,2019
+Agriculturist Licensure Exam,"November  5,6 & 7, 2019",146,53,CAF Campus,2019
+Forester Licensure Exam,"September 4 & 5 , 2019",28,21,CAF Campus,2019
+Agriculturist Licensure Exam,"November  5,6 & 7, 2019",60,17,Calinog Campus,2019
+LET Elementary Level,03 24 19,1,0,Calinog Campus,2019
+LET Elementary Level,09 29 19,36,18,Calinog Campus,2019
+LET Secondary Level,03 24 19,6,0,Calinog Campus,2019
+LET Secondary Level,09 29 19,63,36,Calinog Campus,2019
+LET Elementary Level,03 24 19,2,0,Janiuay Campus,2019
+LET Elementary Level,09 29 19,111,63,Janiuay Campus,2019
+LET Secondary Level,03 24 19,3,0,Janiuay Campus,2019
+LET Secondary Level,09 29 19,114,57,Janiuay Campus,2019
+Criminologist Licensure Exam,"June 9, 10 & 11, 2019",179,118,Lambunao Campus,2019
+Criminologist Licensure Exam,"November 29, 30 & Dec . 1 2019",16,5,Lambunao Campus,2019
+LET Elementary Level,03 24 19,5,1,Lambunao Campus,2019
+LET Elementary Level,09 29 19,90,54,Lambunao Campus,2019
+LET Secondary Level,03 24 19,6,1,Lambunao Campus,2019
+LET Secondary Level,09 29 19,124,69,Lambunao Campus,2019
+LET Elementary Level,03 24 19,4,1,Pototan Campus,2019
+LET Elementary Level,09 29 19,99,40,Pototan Campus,2019
+LET Secondary Level,03 24 19,3,2,Pototan Campus,2019
+LET Secondary Level,09 29 19,97,54,Pototan Campus,2019
+Physician Licensure Exam,2021-03-01,24,22,Main Campus,2021
+Physician Licensure Exam,2021-09-01,78,72,Main Campus,2021
+LET Elementary Level,September 26. 2021,14,13,Main Campus,2021
+LET Secondary Level,September 26. 2021,71,65,Main Campus,2021
+Forester Licensure Exam,"October 20-21, 2021",3,2,CAF Campus,2021
+Agriculturist Licensure Exam,"November 17-19, 2021",4,1,CAF Campus,2021
+LET Elementary Level,September 26. 2021,1,0,Calinog Campus,2021
+LET Secondary Level,September 26. 2021,5,5,Calinog Campus,2021
+Agriculturist Licensure Exam,"November 17-19, 2021",2,2,Calinog Campus,2021
+LET Elementary Level,September 26. 2021,12,7,Janiuay Campus,2021
+LET Secondary Level,September 26. 2021,6,3,Janiuay Campus,2021
+LET Elementary Level,September 26. 2021,3,0,Pototan Campus,2021
+LET Secondary Level,September 26. 2021,10,4,Pototan Campus,2021
+LET Elementary Level,September 26. 2021,10,6,Himamaylan Campus,2021
+LET Secondary Level,September 26. 2021,7,7,Himamaylan Campus,2021
