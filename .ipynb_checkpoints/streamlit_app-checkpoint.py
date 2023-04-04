@@ -64,7 +64,7 @@ def app():
         
     df['Passing Rate'] = round(df['Passers'].astype(int) / df['Takers'].astype(int) * 100, 2)
     new_df = df.loc[:, ['Exam', 'Date', 'Takers', 'Passers', 'Passing Rate']]  
-    mean_rate = new_df['Passing Rate'].mean()
+    mean_rate = rount(new_df['Passing Rate'].mean(), 2)
     
     if st.button('Show Licensure Exam Report'):
         s = 'Year: ' + year
@@ -72,7 +72,7 @@ def app():
         s = 'Campus: ' + campus
         st.write(s)
         st.write(new_df)
-        s = 'Mean Passing Rate: ' + mean_rate
+        s = 'Mean Passing Rate: ' + str(mean_rate)
         st.write(s)
         
 #run the app
