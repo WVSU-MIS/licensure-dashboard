@@ -69,7 +69,7 @@ def app():
     
     if st.button('Show Licensure Exam Report'):
         fig = plt.figure(figsize = (10, 3))
-        sns.barplot(x = scounts.index, y = scounts.values, palette= 'viridis')
+        sns.barplot(x = df[Exam], y = df['Passing Rate'], palette= 'viridis')
         st.pyplot(fig)
         s = 'Year: ' + year
         st.write(s)
