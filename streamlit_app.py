@@ -93,7 +93,7 @@ def app():
     new_df['Passing Rate'] = new_df['Passing Rate'].round(2)
     mean_rate = round(new_df['Passing Rate'].mean(), 2)
     
-    if st.button('Show Licensure Exam Report'):
+    if st.button('Show Licensure Exam Results'):
         
         #vertical_barplot(df)
         horizontal_barplot(df)
