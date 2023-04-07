@@ -86,6 +86,7 @@ def app():
         s = 'Campus: ' + campus
         st.write(s)
         new_df
+        st.dataframe(new_df.reset_index(drop=True), use_container_width=True)
         s = 'Mean Passing Rate: ' + str(mean_rate) + ' %'
         st.write(s)
         
