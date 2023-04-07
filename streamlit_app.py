@@ -42,8 +42,8 @@ def horizontal_barplot(df):
 
     # Set plot title and axis labels
     plt.title("Comparizon of Passing Rates")
-    plt.xlabel("Value")
-    plt.ylabel("Category")
+    plt.xlabel("Passing Rate")
+    plt.ylabel("Exam Date")
     st.pyplot(fig)
     return
 
