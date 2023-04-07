@@ -39,7 +39,7 @@ def horizontal_barplot(df):
     fig = plt.figure()
     sns.set(style="darkgrid")
     sns.barplot(x=df['Passing Rate'], y=df['Exam Date'], color="b")
-
+    plt.xlim(0, 100)
     # Set plot title and axis labels
     plt.title("Comparizon of Passing Rates")
     plt.xlabel("Passing Rate")
