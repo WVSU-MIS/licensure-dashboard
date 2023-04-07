@@ -86,7 +86,7 @@ def app():
         s = 'Campus: ' + campus
         st.write(s)
         new_df['Passing Rate'] = new_df['Passing Rate'].apply(lambda x: format(x, '.2f'))
-        new_df.style.set_properties(**{'text-align': 'right'})
+        new_df['Passing Rate'].style.set_properties(**{'text-align': 'right'})
         st.dataframe(new_df.reset_index(drop=True), use_container_width=True)
         
         s = 'Mean Passing Rate: ' + str(mean_rate) + ' %'
