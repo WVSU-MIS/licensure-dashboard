@@ -65,7 +65,7 @@ def app():
     df['Passing Rate'] = df['Passers'].astype(int) / df['Takers'].astype(int) * 100
     
     df['Passing Rate'] = df['Passing Rate'].astype(float)
-    df['Exam Date'] = df['Exam'] + df['Date']
+    df['Exam Date'] = df['Exam'] + ' ' + df['Date']
     
     new_df = df.loc[:, ['Exam Date', 'Takers', 'Passers', 'Passing Rate']]
     new_df['Passing Rate'] = new_df['Passing Rate'].round(2)
@@ -85,8 +85,9 @@ def app():
         st.write(s)
         s = 'Campus: ' + campus
         st.write(s)
-        new_df
+        new_df['Passing Rate'] = new_df['Passing Rate'].apply(lambda x: format(x, '.2f'))
         st.dataframe(new_df.reset_index(drop=True), use_container_width=True)
+        
         s = 'Mean Passing Rate: ' + str(mean_rate) + ' %'
         st.write(s)
         
