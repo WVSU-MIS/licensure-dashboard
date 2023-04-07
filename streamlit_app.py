@@ -85,7 +85,7 @@ def app():
         st.write(s)
         s = 'Campus: ' + campus
         st.write(s)
-        st.write(new_df)
+        new_df
         s = 'Mean Passing Rate: ' + str(mean_rate) + ' %'
         st.write(s)
         
