@@ -64,17 +64,14 @@ def app():
         
     df['Passing Rate'] = df['Passers'].astype(int) / df['Takers'].astype(int) * 100
     
-    df['Passing Rate'] = df['Passing Rate'].astype(float).round(2)
+    df['Passing Rate'] = df['Passing Rate'].astype(float)
     df['Exam Date'] = df['Exam'] + df['Date']
     
-    new_df = df.loc[:, ['Exam Date', 'Takers', 'Passers', 'Passing Rate']]  
+    new_df = df.loc[:, ['Exam Date', 'Takers', 'Passers', 'Passing Rate'].round(2)]  
     mean_rate = round(new_df['Passing Rate'].mean(), 2)
     
     if st.button('Show Licensure Exam Report'):
         
-
-
-
         fig = plt.figure(figsize = (10, 3))
         plt.title('Comparison of Passing Rates')
         plt.xlabel('Category')
@@ -88,7 +85,7 @@ def app():
         s = 'Campus: ' + campus
         st.write(s)
         st.write(new_df)
-        s = 'Mean Passing Rate: ' + str(mean_rate) + '%'
+        s = 'Mean Passing Rate: ' + str(mean_rate) + ' %'
         st.write(s)
         
 #run the app
