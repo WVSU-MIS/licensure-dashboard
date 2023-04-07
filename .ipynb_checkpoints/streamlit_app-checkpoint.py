@@ -25,6 +25,16 @@ def loadcsvfile():
     df = pd.read_csv(csvfile, dtype='str', header=0, sep = ",", encoding='latin') 
     return df
 
+def vertical_barplot(df):
+    fig = plt.figure()
+    plt.title('Comparison of Passing Rates')
+    plt.xlabel('Category')
+    plt.ylabel('Value')
+    p = sns.barplot(x = df['Exam Date'], y = df['Passing Rate'], palette= 'viridis')
+    _ = plt.setp(p.get_xticklabels(), rotation=90) 
+    st.pyplot(fig)
+    return
+
 # Define the Streamlit app
 def app():
     st.title("Welcome to the WVSU Licensure Examination Dashboard")      
@@ -73,13 +83,8 @@ def app():
     
     if st.button('Show Licensure Exam Report'):
         
-        fig = plt.figure(figsize = (10, 3))
-        plt.title('Comparison of Passing Rates')
-        plt.xlabel('Category')
-        plt.ylabel('Value')
-        p = sns.barplot(x = df['Exam Date'], y = df['Passing Rate'], palette= 'viridis')
-        _ = plt.setp(p.get_xticklabels(), rotation=90) 
-        st.pyplot(fig)
+        vertical_barplot(df)
+        
         
         s = 'Year: ' + year
         st.write(s)
