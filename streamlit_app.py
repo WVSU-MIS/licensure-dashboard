@@ -62,9 +62,9 @@ def app():
         campus = selected_option
         df = filterByCampus(df, campus)
         
-    df['Passing Rate'] = (df['Passers'].astype(int) / df['Takers'].astype(int) * 100).round(2)
+    df['Passing Rate'] = df['Passers'].astype(int) / df['Takers'].astype(int) * 100
     
-    df['Passing Rate'] = df['Passing Rate'].round(2).astype(float)
+    df['Passing Rate'] = df['Passing Rate'].astype(float).round(2)
     df['Exam Date'] = df['Exam'] + df['Date']
     
     new_df = df.loc[:, ['Exam Date', 'Takers', 'Passers', 'Passing Rate']]  
