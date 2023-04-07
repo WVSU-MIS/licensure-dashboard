@@ -67,7 +67,8 @@ def app():
     df['Passing Rate'] = df['Passing Rate'].astype(float)
     df['Exam Date'] = df['Exam'] + df['Date']
     
-    new_df = df.loc[:, ['Exam Date', 'Takers', 'Passers', 'Passing Rate'].round(2)]  
+    new_df = df.loc[:, ['Exam Date', 'Takers', 'Passers', 'Passing Rate']]
+    new_df['Passing Rate'] = new_df['Passing Rate'].round(2)
     mean_rate = round(new_df['Passing Rate'].mean(), 2)
     
     if st.button('Show Licensure Exam Report'):
