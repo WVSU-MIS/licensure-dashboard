@@ -35,6 +35,18 @@ def vertical_barplot(df):
     st.pyplot(fig)
     return
 
+def horizontal_barplot(df):
+    fig = plt.figure()
+    sns.set(style="darkgrid")
+    sns.barplot(x=df['Passing Rate'], y=df['Exam Date'], color="b")
+
+    # Set plot title and axis labels
+    plt.title("Comparizon of Passing Rates")
+    plt.xlabel("Value")
+    plt.ylabel("Category")
+    st.pyplot(fig)
+    return
+
 # Define the Streamlit app
 def app():
     st.title("Welcome to the WVSU Licensure Examination Dashboard")      
@@ -83,8 +95,8 @@ def app():
     
     if st.button('Show Licensure Exam Report'):
         
-        vertical_barplot(df)
-        
+        #vertical_barplot(df)
+        horizontal_barplot(df)
         
         s = 'Year: ' + year
         st.write(s)
